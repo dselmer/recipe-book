@@ -2,6 +2,7 @@ import { Autocomplete } from "@mui/material";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from "@mui/material/TextField";
+import { PiSelectionBackground } from "react-icons/pi";
 function SearchBar() {
   return (
     <>
@@ -11,8 +12,8 @@ function SearchBar() {
         <TextField
           id="standard-basic"
           label="Search Recipes"
-          variant="outlined"
-          sx={{ width: "100%", Autocomplete:'disabled'}}
+          variant="filled"
+          sx={{ width: "100%", Autocomplete:'disabled' ,Backgroundcolor: ' #f5f5f5' }} 
         />
        
       </div>
