@@ -17,7 +17,7 @@
 
 }
 
-.search-bar-container,.searchbar-flex-container,h1{
+.search-bar-container,.searchbar-flex-container,.circle-dots-flex-container,h1{
   background-color:#383838;
   
 }
@@ -101,4 +101,17 @@ span {
   margin-left:  40px;
   margin-right: 10px;
   font-size: large;
+}
+.circle-dots-flex-container{
+  display: flex;
+  justify-content: center;
+
+}
+.circle-dots{
+  border: 2px solid #00bfff;
+  background-color: #00bfff;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  margin: 0 10px;
 }
