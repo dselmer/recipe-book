@@ -129,3 +129,31 @@ span {
 .RecipeList-flex-container{
 
 }
+
+.card-parent-container{
+  border: 2px solid #00bfff;
+  background-color: #00bfff;
+padding: 10px;
+width:fit-content;
+margin: 0 100px;
+
+}
+
+.recipe-label h3{
+  border: 2px solid #00bfff;
+  background-color: #00bfff;
+
+  width: 125px;
+  text-align: center;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 8px;
+  font-family: "Caveat", cursive;
+  text-transform: uppercase;
+
+}
+
+.flex-parent-card{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}

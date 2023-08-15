@@ -1,3 +1,5 @@
+import CardComponent from "./CardComponent";
+
 function RecipeList() {
     return (
       <>
@@ -6,8 +8,12 @@ function RecipeList() {
             <h1>
          Recipe List
             </h1>
-           
-        
+            <div className="flex-parent-card">
+         <CardComponent/>
+         <CardComponent/>
+         <CardComponent/>
+        </div>
+         
           </div>
         </div>
       </>
