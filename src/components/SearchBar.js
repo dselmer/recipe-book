@@ -13,7 +13,7 @@ function SearchBar() {
           id="standard-basic"
           label="Search Recipes"
           variant="filled"
-          sx={{ width: "100%", Autocomplete:'disabled' ,Backgroundcolor: ' #f5f5f5' }} 
+          sx={{ width: "100%", Autocomplete:'disabled' }} 
         />
        
       </div>
