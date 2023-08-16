@@ -148,13 +148,14 @@ margin: 0 100px;
 
 .recipe-label{
   width: 85%;
+
   text-overflow: ellipsis;
 }
 
 .recipe-label h3{
   border: 2px solid #383838;
   background-color:#383838;
-
+  min-height: 28px;
   
   width: 40%;
   text-align: center;
