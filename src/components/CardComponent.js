@@ -13,7 +13,7 @@ function CardComponent() {
     <>
       <div className="card-parent-container">
         <div className="recipe-label">
-          <h3>roast</h3>
+          <h3>chicken </h3>
         </div>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia

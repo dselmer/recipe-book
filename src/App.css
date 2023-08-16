@@ -146,11 +146,17 @@ margin: 0 100px;
 
 }
 
+.recipe-label{
+  width: 85%;
+  text-overflow: ellipsis;
+}
+
 .recipe-label h3{
   border: 2px solid #383838;
   background-color:#383838;
 
-  width: 125px;
+  
+  width: 40%;
   text-align: center;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 8px;
