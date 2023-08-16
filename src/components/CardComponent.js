@@ -35,7 +35,7 @@ function CardComponent() {
             <Button size="small">Details</Button>
             <Button
               className="btn-2"
-              sx={{ maxWidth: 345, backgroundColor: "#00bfff", color: "azure",  }}
+              variant="contained" color="primary"
               size="small"
             >
           Recipe URL
