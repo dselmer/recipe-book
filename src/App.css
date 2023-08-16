@@ -166,5 +166,14 @@ margin: 0 100px;
   align-items: flex-start;
 }
 
+.fave-icon{
+  font-size: 30px;
+  margin-left: 10px;
+  color:pink;
+}
 
+.fave-icon:hover{
+  color: red;
+
+}
 

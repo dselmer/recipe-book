@@ -4,7 +4,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import '../App.css'
+import { AiFillHeart } from "react-icons/ai";
+import "../App.css";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function CardComponent() {
   return (
@@ -13,7 +15,7 @@ function CardComponent() {
         <div className="recipe-label">
           <h3>roast</h3>
         </div>
-        <Card sx={{ maxWidth: 345  }}>
+        <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
             alt="green iguana"
@@ -30,8 +32,15 @@ function CardComponent() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button  size="small">Share</Button>
-            <Button className="btn-2" sx={{ maxWidth: 345 ,  backgroundColor:'#00bfff' ,color:"azure" }}  size="small">Learn More</Button>
+            <Button size="small">Details</Button>
+            <Button
+              className="btn-2"
+              sx={{ maxWidth: 345, backgroundColor: "#00bfff", color: "azure",  }}
+              size="small"
+            >
+          Recipe URL
+            </Button>
+            <AiFillHeart className="fave-icon" />
           </CardActions>
         </Card>
       </div>
