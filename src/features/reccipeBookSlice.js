@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const recipeBookSlice = createSlice({
-  name: 'recipe',
+  name:"recipeBook",
   initialState: {
-    value: 0
+    mainIngredient : 'steak'
   },
   reducers: {
     
@@ -11,5 +11,7 @@ export const recipeBookSlice = createSlice({
 })
 
 export const { increment, decrement, incrementByAmount } = recipeBookSlice.actions
+
+export const  selectMainIngredient = (state) => state.recipeBook.mainIngredient;
 
 export default recipeBookSlice.reducer

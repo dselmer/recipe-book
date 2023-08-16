@@ -7,13 +7,18 @@ import Typography from "@mui/material/Typography";
 import { AiFillHeart } from "react-icons/ai";
 import "../App.css";
 import { hover } from "@testing-library/user-event/dist/hover";
+import {  selectMainIngredient  } from '../features/reccipeBookSlice';
+import {useSelector} from 'react-redux'
+
+
 
 function CardComponent() {
+  const  MainIngredient  = useSelector(  selectMainIngredient )
   return (
     <>
       <div className="card-parent-container">
         <div className="recipe-label">
-          <h3>chicken </h3>
+          <h3>{MainIngredient} </h3>
         </div>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
@@ -35,7 +40,8 @@ function CardComponent() {
             <Button size="small">Details</Button>
             <Button
               className="btn-2"
-              variant="contained" color="primary"
+              variant="contained" 
+              color='primary'
               size="small"
             >
           Recipe URL
