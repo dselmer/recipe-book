@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { AiFillHeart } from "react-icons/ai";
 import "../App.css";
 import { hover } from "@testing-library/user-event/dist/hover";
-import {  selectMainIngredient  } from '../features/reccipeBookSlice';
+import {  selectMainIngredient  } from '../reducers/reccipeBookSlice';
 import {useSelector} from 'react-redux'
 
 
