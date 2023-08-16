@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import '../App.css'
 
 function CardComponent() {
   return (
@@ -12,7 +13,7 @@ function CardComponent() {
         <div className="recipe-label">
           <h3>roast</h3>
         </div>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345  }}>
           <CardMedia
             component="img"
             alt="green iguana"
@@ -29,8 +30,8 @@ function CardComponent() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button  size="small">Share</Button>
+            <Button className="btn-2" sx={{ maxWidth: 345 ,  backgroundColor:'#00bfff' ,color:"azure" }}  size="small">Learn More</Button>
           </CardActions>
         </Card>
       </div>
