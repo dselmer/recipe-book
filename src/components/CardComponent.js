@@ -40,8 +40,10 @@ function CardComponent() {
               {recipe.nameOfDish}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              {/* Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica */}
+              {recipe.
+              details}
             </Typography>
           </CardContent>
           <CardActions>
