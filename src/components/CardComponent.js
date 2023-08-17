@@ -32,7 +32,7 @@ function CardComponent() {
             component="img"
             alt="green iguana"
             height="140"
-            image = {recipe.src}
+            image =  {recipe.src}
             
           />
           <CardContent>
