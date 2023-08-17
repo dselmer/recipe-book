@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { AiFillHeart } from "react-icons/ai";
+import BasicModal from "./BasicModal";
 import "../App.css";
 import { hover } from "@testing-library/user-event/dist/hover";
 import {
@@ -12,6 +13,22 @@ import {
   selectRecipeList,
 } from "../reducers/reccipeBookSlice";
 import { useSelector } from "react-redux";
+
+
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 
 function CardComponent() {
@@ -45,7 +62,8 @@ function CardComponent() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Details</Button>
+            <BasicModal />
+          
             <Button
               className="btn-2"
               variant="contained"
