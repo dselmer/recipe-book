@@ -9,7 +9,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'jalapeno poppers',
         isFavorite: false,
-        src:'../../public/assests/air-fryer-jalapeno-poppers-3-1200x800-1-1024x683.jpg'
+        src:'../assests/air-fryer-jalapeno-poppers-3-1200x800-1-1024x683.jpg'
 
       },
       {
@@ -17,7 +17,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Pork Belly',
         isFavorite: false,
-        src:'../../public/assests/Pork _Belly_ramen.jpeg'
+        src:'../assests/Pork _Belly_ramen.jpeg'
 
       },
       {
@@ -25,7 +25,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Jerk Chicken',
         isFavorite: false,
-        src:'../../public/assests/jerk_chicken.jpeg'
+        src:'../assests/jerk_chicken.jpeg'
       }
     ]
   },
