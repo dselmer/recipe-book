@@ -11,7 +11,7 @@ function RecipeList() {
             <div className="flex-parent-card">
          <CardComponent/>
          <CardComponent/>
-         <CardComponent/>
+    
         </div>
          
           </div>

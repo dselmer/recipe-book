@@ -7,29 +7,36 @@ import Typography from "@mui/material/Typography";
 import { AiFillHeart } from "react-icons/ai";
 import "../App.css";
 import { hover } from "@testing-library/user-event/dist/hover";
-import {  selectMainIngredient  } from '../reducers/reccipeBookSlice';
-import {useSelector} from 'react-redux'
-
-
+import {
+  selectMainIngredient,
+  selectRecipeList,
+} from "../reducers/reccipeBookSlice";
+import { useSelector } from "react-redux";
 
 function CardComponent() {
-  const  MainIngredient  = useSelector(  selectMainIngredient )
+
+  const recipeList = useSelector(selectRecipeList);
+  
   return (
     <>
+        {recipeList.map((recipe)=>{return(
+          console.log(recipe.src),
       <div className="card-parent-container">
         <div className="recipe-label">
-          <h3>{MainIngredient} </h3>
+
+        <h3>{recipe.mainIngredient}</h3>
         </div>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
             alt="green iguana"
             height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image = {recipe.src}
+            
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              {recipe.nameOfDish}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
@@ -40,16 +47,17 @@ function CardComponent() {
             <Button size="small">Details</Button>
             <Button
               className="btn-2"
-              variant="contained" 
-              color='primary'
+              variant="contained"
+              color="primary"
               size="small"
             >
-          Recipe URL
+              Recipe URL
             </Button>
             <AiFillHeart className="fave-icon" />
           </CardActions>
         </Card>
       </div>
+      ) })}
     </>
   );
 }

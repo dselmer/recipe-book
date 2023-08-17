@@ -3,13 +3,13 @@ import { createSlice } from '@reduxjs/toolkit'
 export const recipeBookSlice = createSlice({
   name:"recipeBook",
   initialState: {
-    recpieList :[
+    recipeList:[
       {
         mainIngredient: 'jalapeno',
         id:null,
         nameOfDish:'jalapeno poppers',
         isFavorite: false,
-        img:'../../public/assests/air-fryer-jalapeno-poppers-3-1200x800-1-1024x683.jpg'
+        src:'../../public/assests/air-fryer-jalapeno-poppers-3-1200x800-1-1024x683.jpg'
 
       },
       {
@@ -17,7 +17,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Pork Belly',
         isFavorite: false,
-        img:'../../public/assests/Pork _Belly_ramen.jpeg'
+        src:'../../public/assests/Pork _Belly_ramen.jpeg'
 
       },
       {
@@ -25,7 +25,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Jerk Chicken',
         isFavorite: false,
-        img:'../../public/assests/jerk_chicken.jpeg'
+        src:'../../public/assests/jerk_chicken.jpeg'
       }
     ]
   },

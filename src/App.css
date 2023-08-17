@@ -142,13 +142,13 @@ h1 {
 padding: 2px;
 padding-left: 3px;
 width:fit-content;
-margin: 0 100px;
+margin: 70px 100px;
 
 }
 
 .recipe-label{
   width: 85%;
-
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -156,7 +156,9 @@ margin: 0 100px;
   border: 2px solid #383838;
   background-color:#383838;
   min-height: 28px;
-  
+  max-height: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   width: 40%;
   text-align: center;
   border-top-right-radius: 2px;
@@ -169,8 +171,9 @@ margin: 0 100px;
 
 .flex-parent-card{
   display:flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 .fave-icon{
@@ -183,4 +186,3 @@ margin: 0 100px;
   color: red;
 
 }
-
