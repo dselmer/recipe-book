@@ -17,14 +17,15 @@ export const recipeBookSlice = createSlice({
         id: 2,
         nameOfDish: "Pork Belly",
         isFavorite: false,
-        src: "./asset/resources/Pork _Belly_ramen.jpeg",
+        src:'.git lo/assests/resources/Pork _Belly_ramen.jpeg'
+
       },
       {
         mainIngredient: "chicken",
         id: 3,
         nameOfDish: "Jerk Chicken",
         isFavorite: false,
-       src:'./assests/resources/grilled_cheese_and_tomato_soup.jpeg'
+       src:'./assests/resources/jerkchicken_1.jpeg'
       }
     ]
   },
