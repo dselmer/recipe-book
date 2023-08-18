@@ -29,11 +29,16 @@ export const recipeBookSlice = createSlice({
     ]
   },
   reducers: {
-   addRecipe: function(state,action){
-    return {...state,recipeList:[...state.recipeList,action.payload]}
+    addRecipe: function(state,action){
+     return {...state,recipeList:[...state.recipeList,action.payload]}
+    }
+     
    }
-    
-  }
-})
-
-export default recipeBookSlice.reducer;
+ })
+ 
+ export const { increment, decrement, incrementByAmount } = recipeBookSlice.actions
+ 
+ export const  selectMainIngredient = (state) =>{return state.mainIngredient};
+ export const selectRecipeList= (state)=>{return state.recipeList};
+ 
+ export default recipeBookSlice.reducer
