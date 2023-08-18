@@ -173,7 +173,6 @@ margin: 70px 100px;
 .flex-parent-card{
   display:flex;
   justify-content: flex-start;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 

@@ -17,7 +17,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Pork Belly',
         isFavorite: false,
-        src:''
+        src:'.git lo/assests/resources/Pork _Belly_ramen.jpeg'
 
       },
       {
@@ -25,7 +25,7 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Jerk Chicken',
         isFavorite: false,
-       src:'../../public/assests/resources/grilled_cheese_and_tomato_soup.jpeg'
+       src:'./assests/resources/jerkchicken_1.jpeg'
       }
     ]
   },
