@@ -25,12 +25,14 @@ export const recipeBookSlice = createSlice({
         id:null,
         nameOfDish:'Jerk Chicken',
         isFavorite: false,
-       src:'./assests/resources/jerkchicken_1.jpeg'
+       src:'../../public/assests/resources/grilled_cheese_and_tomato_soup.jpeg'
       }
     ]
   },
   reducers: {
-   
+   addRecipe: function(state,action){
+    return {...state,recipeList:[...state.recipeList,action.payload]}
+   }
     
   }
 })
