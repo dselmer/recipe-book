@@ -17,7 +17,7 @@ export const recipeBookSlice = createSlice({
         id: 2,
         nameOfDish: "Pork Belly",
         isFavorite: false,
-        src:'.git lo/assests/resources/Pork _Belly_ramen.jpeg'
+        src:'./assests/resources/Pork _Belly_ramen.jpeg'
 
       },
       {
@@ -31,13 +31,13 @@ export const recipeBookSlice = createSlice({
   },
   reducers: {
     addRecipe: function(state,action){
-     return {...state,recipeList:[...state.recipeList,action.payload]}
+     return {...state,recipeList:[...state.recipeList,...action.payload]}
     }
      
    }
  })
  
- export const { increment, decrement, incrementByAmount } = recipeBookSlice.actions
+ export const { addRecipe} = recipeBookSlice.actions
  
  export const  selectMainIngredient = (state) =>{return state.mainIngredient};
  export const selectRecipeList= (state)=>{return state.recipeList};
